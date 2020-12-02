@@ -1,0 +1,53 @@
+drop database project;
+create database project;
+use project;
+create table user(uname varchar(50) primary key,password varchar(30),name varchar(25),class varchar(60),roll_no varchar(10),dob date,admn varchar(9),log char(1));
+insert into user values("akshat1003","saxena","akshat saxena","XII -A4","157",'2003-03-10',"168735",'n');
+insert into user values("sakshi2000","chauhan","sakshi chauhan","XI-B","149",'2000-05-30',"168731",'n');
+insert into user values("abhinav2000","chaudhary","abhinav chaudhary","XII -A4","158",'2000-04-21',"168736",'n');
+insert into user values("tarun2000","tyagi","tarun tyagi","XII -A4","159",'2000-08-12',"168737",'n');
+insert into user values("sarthak2000","sharma","sarthak sharma","XII -A4","159",'2000-05-27',"168738",'n');
+insert into user values("anamika2000","kashyap","anamika kashyap","XI -A5","145",'2001-03-17',"168739",'n');
+create table library("admn" varchar(10),"name" varchar(40),issued date,return date);
+insert into library values("160735","h.c.verma",'2017-03-06','2017-05-06');
+insert into library values("160735","chemistrydisha",'2017-05-10','2017-06-10');
+insert into library values("160735","resnik halliday",'2017-04-06','2017-05-06');
+insert into library values("160736","soloman",'2017-03-06','2017-05-06');
+insert into library values("160736","mathsdisha",'2017-05-10','2017-06-10');
+insert into library values("160737","resnik halliday",'2017-04-06','2017-05-06');
+insert into library values("160738","morrison boyd",'2017-03-06','2017-05-06');
+insert into library values("160738","physics disha",'2017-05-10','2017-06-10');
+insert into library values("160738","resnik halliday",'2017-04-06','2017-05-06');
+insert into library values("160739","morrison boyd",'2017-03-06','2017-05-06');
+insert into library values("160739","physics disha",'2017-05-10','2017-06-10');
+insert into library values("160739","xam idea maths",'2017-04-06','2017-05-06');
+insert into library values("160731","morrison boyd",'2017-03-06','2017-05-06');
+insert into library values("160731","physics disha",'2017-05-10','2017-06-10');
+insert into library values("160731","resnik halliday",'2017-04-06','2017-05-06');
+create table cafe(admn varchar(10),name varchar(40),balance varchar(10));
+insert into cafe values('160735',"akshat",'500');
+insert into cafe values('160736',"abhinav",'1000');
+insert into cafe values('160737','tarun','600');
+insert into cafe values('160738',"sarthak",'900');
+insert into cafe values('160739',"anamika",'900');
+insert into cafe values('160731',"sakshi",'1500');
+create table profile (name varchar(20),clas varchar(7),admn varchar(10),father varchar(20),mother varchar(20),mobilef varchar(10),mobilem varchar(10),emailf varchar(300),emailm varchar(30),address varchar(40),bloodg varchar(10),stream varchar(10));
+insert into profile values('akshat','XII-A4','160735','Anuj saxena','manisha saxena','9717095532','9717095531','atlltd.anuj@gmail.com','akshat20003@gmail.com','187 vivekanand nagar ghaziabad','AB+','Science');
+insert into profile values('abhinav','XII-A4','160736','Arbind chaudhary','sonia chaudhary','9717562556','9717785469','atlltd.arbind@gmail.com','abhinav20003@gmail.com','187 kamla nehru nagar ghaziabad','B+','Science');
+insert into profile values('tarun','XII-A4','160737','Arun tyagi','seema tyagi','9717564578','9717235689','atlltd.arun@gmail.com','tarun20003@gmail.com','250 sanjay nagar ghaziabad','A+','Science');
+insert into profile values('sarthak','XII-A4','160735','devendra sharma','vineeta sharma','9717584796','9717234587','atlltd.devendra@gmail.com','sarthak20003@gmail.com','687 panchwati ghaziabad','AB+','Science');
+insert into profile values('sakshi','XI-B','160731','Anil chauhan','anju chauhan','9717895674','9717124556','atlltd.anil@gmail.com','sakshi2003@gmail.com','187 sanjay nagar ghaziabad','B+','Science');
+insert into profile values('anamika','XII-A5','160739','sunny kashyap','mona kashyap','9717095532','9717095531','atlltd.sunny@gmail.com','anamika2003@gmail.com','192 kavinagar ghaziabad','AB+','Science');
+create table bus(route varchar(20),busno varchar(15),teacher varchar(40),pick varchar(6),dropt varchar(6),fee varchar(6),driver varchar(30),admn varchar(18));
+insert into bus values('SS3A','UP 14 BG 8552','akhil sir','6:30','2:30','3000','sameer','160735');
+insert into bus values('SS3C','UP 14 BQ 8782','rajeev sir','6:30','2:30','3000','sameer','160736');
+
+insert into bus values('SS3','UP 14 BG 2342','akhil sir','6:30','2:30','3000','lucky','160737');
+insert into bus values('SS1','UP 14 AS 9872','arun sir','6:30','2:30','3000','aamir','160738');
+
+
+
+
+
+
+
